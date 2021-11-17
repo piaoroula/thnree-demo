@@ -29,7 +29,7 @@ var renderer = new THREE.WebGLRenderer({
   alpha: true,
 });
 renderer.shadowMap.enabled = true; //开启阴影渲染器
-
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(windowWidth, windowHeight); //宽高可根据实际项目要求更改 如果是窗口高度改为innerHeight
 renderer.setClearColor(0x4c545a, 0.9); //设置背景色
