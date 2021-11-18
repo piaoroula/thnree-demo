@@ -113,6 +113,8 @@ export default {
       this.controls.update();
       this.render();
     },
+    //创建地面
+
     //渲染函数
     render() {
       const delta = clock.getDelta();

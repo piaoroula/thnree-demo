@@ -41,7 +41,7 @@ const cubeTexture = cubeTextureLoader.load([
   "nz.jpg",
 ]);
 
-//scene.background = cubeTexture;
+scene.background = cubeTexture;
 
 //mesh
 const torusKnotGeometry = new THREE.TorusKnotGeometry(3, 1, 256, 32);
