@@ -57,4 +57,18 @@ scene.add(directionalLight);
 var helper = new THREE.CameraHelper(directionalLight.shadow.camera);
 scene.add(helper);
 
+// //生成一个平面
+// var planeGeometry = new THREE.PlaneGeometry(60, 20, 10, 10); //注意参数
+// //生成一个材质，设置材质的颜色，同时显示线框
+// var planeMaterial = new THREE.MeshBasicMaterial({
+//   color: 0xcccccc,
+//   wireframe: true,
+// });
+// //生成一个网格，将平面和材质放在一个网格中，组合在一起，组成一个物体
+// var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+// plane.rotation.x = -0.5 * Math.PI;
+// plane.position.x = 15;
+// plane.position.y = 0;
+// plane.position.z = 0;
+// scene.add(plane);
 export { scene };

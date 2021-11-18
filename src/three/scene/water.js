@@ -41,7 +41,7 @@ const cubeTexture = cubeTextureLoader.load([
   "nz.jpg",
 ]);
 
-scene.background = cubeTexture;
+//scene.background = cubeTexture;
 
 //mesh
 const torusKnotGeometry = new THREE.TorusKnotGeometry(3, 1, 256, 32);
@@ -56,11 +56,11 @@ torusKnot.scale.set(0.5, 0.5, 0.5);
 const groundGeometry = new THREE.PlaneGeometry(20, 20);
 const groundMaterial = new THREE.MeshStandardMaterial({
   roughness: 0.8,
-  metalness: 0.4,
+  metalness: 0.5,
 });
 const ground = new THREE.Mesh(groundGeometry, groundMaterial);
 ground.rotation.x = Math.PI * -0.5;
-//scene.add(ground);
+scene.add(ground);
 
 const textureLoader = new THREE.TextureLoader();
 textureLoader.load("/textures/hardwood2_diffuse.jpg", function(map) {
